@@ -1,9 +1,10 @@
 ! ZEOLYSIS code
 ! 
-! By Salvador R.G. Balestra, 2020,1) Rocio Semino,2) and Guillaume Maurin,2)
-!    1) Instituto de Ciencia de Materiales de Madrid (ICMM),
-!       Consejo Superior de Investigaciones Científicas, CSIC, Madrid, Spain.
-!    2) 
+! By Salvador R.G. Balestra, 1,2) Rocio Semino,2,3) and Guillaume Maurin,2) in 2020
+!    1) Departamento de Sistemas Físicos, Químicos y Naturales, Universidad Pablo de Olavide, Seville, Spain
+!    2) ICGM, Univ. Montpellier, CNRS, ENSCM, Montpellier, France.
+!    3) Sorbonne Université, CNRS, Physico-chimie des Electrolytes et Nanosystèmes Interfaciaux, 
+!       PHENIX, F-75005 Paris, France
 !
 ! This code calculates angle distributions in zeolitic structures
 ! The code analyses CIF files. The CIF File is provided by input a list file
