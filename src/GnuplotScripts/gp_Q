@@ -1,0 +1,14 @@
+#!/usr/bin/gnuplot -persist
+set terminal postscript eps color enhanced blacktext 'Helvetica,20'
+set output "NAME.eps"
+set size 1,1
+set size ratio 1
+set size ratio 1
+set style fill solid 0.8
+set boxwidth 0.85 relative
+set xrange [0.7:1]
+#unset ytics
+set ylabel 'Frequency / -'
+set xlabel 'Tetrahedrality OP / -'
+plot 'AllZeo/all_zeo_Q_histogram.dat' w boxes lc rgb 'grey' notitle,\
+     'FILE' w boxes lc rgb 'dark-green' notitle

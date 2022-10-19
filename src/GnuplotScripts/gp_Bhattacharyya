@@ -1,0 +1,11 @@
+#!/usr/bin/gnuplot -persist
+set terminal postscript eps color enhanced blacktext 'Helvetica,24'
+set output "Ranking_Bhattacharyya.eps"
+set size 1,1
+set size ratio 1
+set size ratio 1
+set style fill solid 0.8
+set ylabel "Bhattacharyya distance / -"
+set xlabel "Sorted zeolite topologies / -"
+plot 'Report_B.txt' u 0:(-log($3)) w p pt 7 notitle
+#    EOF

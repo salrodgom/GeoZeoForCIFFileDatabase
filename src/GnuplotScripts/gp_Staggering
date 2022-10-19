@@ -1,0 +1,16 @@
+#!/usr/bin/gnuplot -persist
+set terminal postscript eps color enhanced blacktext 'Helvetica,20'
+set output "NAME.eps"
+set size 1,1
+set size ratio 1
+set size ratio 1
+set style fill solid 0.8
+set boxwidth 0.85 relative
+set xrange [0:61]
+##unset ytics
+set ylabel 'Frequency / -'
+set xlabel 'Staggering angle / deg.'
+plot 'AllZeo/all_zeo_Staggering_1st_histogram.dat' w boxes lc rgb 'black' notitle,\
+     'AllZeo/all_zeo_Staggering_2nd_histogram.dat' w boxes lc rgb 'grey' notitle,\
+     'NAME_2nd_histogram.dat' w boxes lc rgb 'purple'    title '2nd order',\
+     'NAME_1st_histogram.dat' w boxes lc rgb 'red' title '1st order'

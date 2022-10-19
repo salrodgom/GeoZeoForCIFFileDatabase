@@ -1,0 +1,12 @@
+#!/usr/bin/gnuplot -persist
+set terminal postscript eps color enhanced blacktext 'Helvetica,24'
+set output "Ranking.eps"
+set size 1,1
+set size ratio 1
+set size ratio 1
+set style fill solid 0.8
+set xlabel "Sorted zeolite topologies / -" 
+set ylabel "Ranking Score /-" 
+set locale "en_GB.UTF-8"
+plot 'Report.txt' u 0:2 w p pt 6 lc rgb 'red' notitle
+#    EOF
